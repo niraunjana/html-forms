@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit/Withdraw Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: navy;">Deposit/Withdraw Transaction Form</h2>
+
+    <form style="width: 100%; max-width: 800px; margin: auto;">
+        <table width="100%" height="80%" border="1" cellpadding="15" cellspacing="0" bgcolor="#f9f9f9">
+            <!-- Account Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Account Information</strong></td>
+            </tr>
+            <tr>
+                <td width="40%"><label for="account_number">Account Number:</label></td>
+                <td width="60%"><input type="text" id="account_number" name="account_number" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="account_name">Account Holder Name:</label></td>
+                <td><input type="text" id="account_name" name="account_name" style="width: 100%;" required></td>
+            </tr>
+            
+            <!-- Transaction Details Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Transaction Details</strong></td>
+            </tr>
+            <tr>
+                <td><label for="transaction_type">Transaction Type:</label></td>
+                <td>
+                    <input type="radio" id="deposit" name="transaction_type" value="deposit" required>
+                    <label for="deposit">Deposit</label>
+                    <input type="radio" id="withdraw" name="transaction_type" value="withdraw" required>
+                    <label for="withdraw">Withdraw</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="currency">Currency:</label></td>
+                <td>
+                    <select id="currency" name="currency" style="width: 100%;" required>
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <!-- Add more currencies as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="amount">Amount:</label></td>
+                <td><input type="number" id="amount" name="amount" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="transaction_date">Transaction Date:</label></td>
+                <td><input type="date" id="transaction_date" name="transaction_date" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="remarks">Remarks:</label></td>
+                <td><textarea id="remarks" name="remarks" style="width: 100%;" rows="4" placeholder="Add any additional information..."></textarea></td>
+            </tr>
+            
+            <!-- Confirmation Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Confirmation</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm">I confirm that the above information is correct and authorize this transaction.</label>
+                </td>
+            </tr>
+
+            <!-- Submission Section -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Transaction" style="background-color: navy; color: white; width: 40%;">
+                    <input type="reset" value="Reset Form" style="background-color: maroon; color: white; width: 40%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

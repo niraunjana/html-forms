@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: navy;">Registration Form</h2>
+
+    <form>
+        <table width="50%" align="center" cellpadding="10" cellspacing="0" border="1" bgcolor="#f9f9f9">
+            <!-- Personal Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Personal Information</strong></td>
+            </tr>
+            <tr>
+                <td width="40%"><label for="fname">First Name:</label></td>
+                <td width="60%"><input type="text" id="fname" name="fname" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">Confirm Password:</label></td>
+                <td><input type="password" id="confirm_password" name="confirm_password" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <!-- Contact Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Contact Information</strong></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" style="width: 100%;" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip Code:</label></td>
+                <td><input type="text" id="zip" name="zip" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" style="width: 100%;" required>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Additional Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Additional Information</strong></td>
+            </tr>
+            <tr>
+                <td><label for="linkedin">LinkedIn Profile:</label></td>
+                <td><input type="url" id="linkedin" name="linkedin" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="occupation">Occupation:</label></td>
+                <td><input type="text" id="occupation" name="occupation" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><label for="security_question">Security Question:</label></td>
+                <td>
+                    <select id="security_question" name="security_question" style="width: 100%;" required>
+                        <option value="pet">What was the name of your first pet?</option>
+                        <option value="school">What was the name of your elementary school?</option>
+                        <option value="birthplace">In what city were you born?</option>
+                        <!-- Add more security questions as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="security_answer">Security Answer:</label></td>
+                <td><input type="text" id="security_answer" name="security_answer" style="width: 100%;" required></td>
+            </tr>
+
+            <!-- Submit Section -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" style="background-color: navy; color: white; width: 40%;">
+                    <input type="reset" value="Reset" style="background-color: maroon; color: white; width: 40%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

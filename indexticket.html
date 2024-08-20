@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Form</title>
+</head>
+<body style="background-color: #f0f8ff; font-family: Arial, sans-serif;">
+
+    <h2 align="center" style="color: #0044cc;">Ticket Booking Form</h2>
+
+    <form style="width: 100%; max-width: 800px; margin: auto; padding: 20px; border: 2px solid #0044cc; border-radius: 8px; background-color: #ffffff;">
+
+        <!-- Ticket Type -->
+        <fieldset style="border: 2px solid #0044cc; padding: 15px;">
+            <legend style="color: #0044cc;">Ticket Type</legend>
+            <label for="ticket_type" style="color: #333333;">Select Ticket Type:</label><br>
+            <input type="radio" id="movie" name="ticket_type" value="movie" required>
+            <label for="movie" style="color: #333333;">Movie</label><br>
+            <input type="radio" id="train" name="ticket_type" value="train">
+            <label for="train" style="color: #333333;">Train</label><br>
+            <input type="radio" id="room" name="ticket_type" value="room">
+            <label for="room" style="color: #333333;">Room</label><br>
+            <input type="radio" id="flight" name="ticket_type" value="flight">
+            <label for="flight" style="color: #333333;">Flight</label><br>
+            <input type="radio" id="bus" name="ticket_type" value="bus">
+            <label for="bus" style="color: #333333;">Bus</label><br><br>
+        </fieldset>
+
+        <!-- Personal Information -->
+        <fieldset style="border: 2px solid #0044cc; padding: 15px;">
+            <legend style="color: #0044cc;">Personal Information</legend>
+            <label for="full_name" style="color: #333333;">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required style="width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"><br><br>
+
+            <label for="email" style="color: #333333;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"><br><br>
+
+            <label for="phone" style="color: #333333;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"><br><br>
+        </fieldset>
+
+        <!-- Booking Details -->
+        <fieldset style="border: 2px solid #0044cc; padding: 15px;">
+            <legend style="color: #0044cc;">Booking Details</legend>
+            <label for="booking_date" style="color: #333333;">Booking Date:</label>
+            <input type="date" id="booking_date" name="booking_date" required style="width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"><br><br>
+
+            <label for="number_of_tickets" style="color: #333333;">Number of Tickets:</label>
+            <input type="number" id="number_of_tickets" name="number_of_tickets" min="1" required style="width: 100px; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"><br><br>
+
+            <label for="additional_info" style="color: #333333;">Additional Information:</label><br>
+            <textarea id="additional_info" name="additional_info" rows="5" cols="50" style="width: 100%; padding: 8px; border: 1px solid #cccccc; border-radius: 4px;"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Book Now" style="width: 100%; padding: 10px; background-color: #0044cc; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+
+</body>
+</html>

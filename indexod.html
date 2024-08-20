@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Duty Request Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkgreen;">On-Duty Request Form</h2>
+
+    <form>
+        <table width="80%" border="1" cellpadding="15" cellspacing="0" bgcolor="#f9f9f9" align="center">
+            
+            <!-- Employee Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#d0e0d0" align="center"><strong>Employee Information</strong></td>
+            </tr>
+            <tr>
+                <td width="40%"><label for="employee_id">Employee ID:</label></td>
+                <td width="60%"><input type="text" id="employee_id" name="employee_id" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="employee_name">Employee Name:</label></td>
+                <td><input type="text" id="employee_name" name="employee_name" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" id="department" name="department" style="width: 100%;" required></td>
+            </tr>
+            
+            <!-- On-Duty Details Section -->
+            <tr>
+                <td colspan="2" bgcolor="#d0e0d0" align="center"><strong>On-Duty Details</strong></td>
+            </tr>
+            <tr>
+                <td><label for="onduty_date">On-Duty Date:</label></td>
+                <td><input type="date" id="onduty_date" name="onduty_date" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="purpose">Purpose of On-Duty:</label></td>
+                <td><textarea id="purpose" name="purpose" rows="4" cols="50" style="width: 100%;" required></textarea></td>
+            </tr>
+
+            <!-- Submission Section -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Request" style="background-color: darkblue; color: white; width: 40%;">
+                    <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 40%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+

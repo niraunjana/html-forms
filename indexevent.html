@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body style="background-color: #f7f9fc; font-family: Arial; margin: 0; padding: 0;">
+
+    <h2 align="center" style="color: #0056b3;">Event Registration Form</h2>
+
+    <form style="max-width: 800px; margin: auto; padding: 20px; background-color: #ffffff;">
+
+        <!-- Personal Information -->
+        <h3 style="color: #0056b3;">Personal Information</h3>
+
+        <label for="full_name" style="color: #343a40;">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <label for="email" style="color: #343a40;">Email:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <label for="phone" style="color: #343a40;">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <!-- Event Details -->
+        <h3 style="color: #0056b3;">Event Details</h3>
+
+        <label for="event_name" style="color: #343a40;">Event Name:</label><br>
+        <input type="text" id="event_name" name="event_name" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <label for="event_date" style="color: #343a40;">Event Date:</label><br>
+        <input type="date" id="event_date" name="event_date" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <label for="event_time" style="color: #343a40;">Event Time:</label><br>
+        <input type="time" id="event_time" name="event_time" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+        <label for="number_of_guests" style="color: #343a40;">Number of Guests:</label><br>
+        <input type="number" id="number_of_guests" name="number_of_guests" min="1" required style="padding: 10px; margin-bottom: 15px; width: 100px;"><br>
+
+        <label for="additional_info" style="color: #343a40;">Additional Information:</label><br>
+        <textarea id="additional_info" name="additional_info" rows="4" cols="50" style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
+
+        <!-- Submit Button -->
+        <div style="text-align: center;">
+            <input type="submit" value="Register for Event" style="padding: 10px 20px; background-color: #0056b3; color: white; border: none; font-size: 16px;">
+        </div>
+    </form>
+
+</body>
+</html>

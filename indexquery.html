@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Form</title>
+</head>
+<body>
+    <h2 align="center">Query Form</h2>
+
+    <form style="width: 100%; max-width: 800px; margin: auto;">
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <!-- Full Name -->
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required style="width: 100%;"><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%;"><br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" style="width: 100%;"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Query Details -->
+        <fieldset>
+            <legend>Query Details</legend>
+
+            <!-- Subject -->
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required style="width: 100%;"><br><br>
+
+            <!-- Query Type -->
+            <label for="query_type">Query Type:</label><br>
+            <input type="radio" id="general" name="query_type" value="general" required>
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="technical" name="query_type" value="technical">
+            <label for="technical">Technical Support</label><br>
+            <input type="radio" id="billing" name="query_type" value="billing">
+            <label for="billing">Billing Issue</label><br><br>
+
+            <!-- Query Details -->
+            <label for="details">Query Details:</label><br>
+            <textarea id="details" name="details" rows="5" cols="50" required style="width: 100%;"></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Query" style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">
+    </form>
+</body>
+</html>

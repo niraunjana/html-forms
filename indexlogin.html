@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Login Form</h2>
+
+    <form style="max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+        <!-- Username -->
+        <label for="username" style="display: block; margin-bottom: 10px; font-weight: bold;">Username:</label>
+        <input type="text" id="username" name="username" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;" required>
+
+        <!-- Password -->
+        <label for="password" style="display: block; margin-bottom: 10px; font-weight: bold;">Password:</label>
+        <input type="password" id="password" name="password" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;" required>
+
+        <!-- Remember Me -->
+        <div style="margin-bottom: 20px;">
+            <input type="checkbox" id="remember_me" name="remember_me" style="margin-right: 10px;">
+            <label for="remember_me">Remember Me</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" style="width: 100%; padding: 10px; background-color: darkblue; color: white; border: none; border-radius: 5px; cursor: pointer;">Login</button>
+    </form>
+
+</body>
+</html>
